@@ -1,0 +1,555 @@
+0  initialize term is  0
+1  initialize term is  0
+2  initialize term is  0
+Test (2A): initial election ...
+server id  0  expire timer
+server id  0  is now candidate. currentTerm  1
+sent args term  1  me is  0
+sent args term  1  me is  0
+wait for vote finish
+0  asks me 1  to vote
+args term is  1  my term is  0
+vote for clear
+0  asks me 2  to vote
+args term is  1  my term is  0
+rf.votedFor  -1  args.LastLogindex 0  rf.getLastLogIndex 0
+i voted
+vote for clear
+rf.votedFor  -1  args.LastLogindex 0  rf.getLastLogIndex 0
+i voted
+candidate: 0 recv enough votes and becomes leader0 leader initialize
+0  broad cast append entri
+append entries  2  args.Term is  1  myterm 1
+append entries  1  args.Term is  1  myterm 1
+id  1  timer reset
+id  2  timer reset
+recv  2  in total
+0  broad cast append entri
+append entries  2  args.Term is  1  myterm 1
+id  2  timer reset
+append entries  1  args.Term is  1  myterm 1
+id  1  timer reset
+recv  2  in total
+0  broad cast append entri
+append entries  1  args.Term is  1  myterm 1
+id  1  timer reset
+append entries  2  args.Term is  1  myterm 1
+id  2  timer reset
+recv  2  in total
+0  broad cast append entri
+append entries  1  args.Term is  1  myterm 1
+id  1  timer reset
+append entries  2  args.Term is  1  myterm 1
+id  2  timer reset
+recv  2  in total
+0  broad cast append entri
+append entries  1  args.Term is  1  myterm 1
+append entries  2  args.Term is  1  myterm 1
+id  2  timer reset
+id  1  timer reset
+recv  2  in total
+0  broad cast append entri
+append entries  2  args.Term is  1  myterm 1
+id  2  timer reset
+append entries  1  args.Term is  1  myterm 1
+id  1  timer reset
+recv  2  in total
+0  time expire but not in follower State
+0  broad cast append entri
+append entries  2  args.Term is  1  myterm 1
+id  2  timer reset
+append entries  1  args.Term is  1  myterm 1
+id  1  timer reset
+recv  2  in total
+0  broad cast append entri
+append entries  1  args.Term is  1  myterm 1
+id  1  timer reset
+append entries  2  args.Term is  1  myterm 1
+id  2  timer reset
+recv  2  in total
+0  broad cast append entri
+append entries  1  args.Term is  1  myterm 1
+id  1  timer reset
+append entries  2  args.Term is  1  myterm 1
+id  2  timer reset
+recv  2  in total
+0  broad cast append entri
+append entries  1  args.Term is  1  myterm 1
+id  1  timer reset
+append entries  2  args.Term is  1  myterm 1
+id  2  timer reset
+recv  2  in total
+0  broad cast append entri
+append entries  1  args.Term is  1  myterm 1
+id  1  timer reset
+append entries  2  args.Term is  1  myterm 1
+id  2  timer reset
+recv  2  in total
+0  broad cast append entri
+append entries  2  args.Term is  1  myterm 1
+id  2  timer reset
+append entries  1  args.Term is  1  myterm 1
+id  1  timer reset
+recv  2  in total
+0  broad cast append entri
+append entries  1  args.Term is  1  myterm 1
+id  1  timer reset
+append entries  2  args.Term is  1  myterm 1
+id  2  timer reset
+recv  2  in total
+0  broad cast append entri
+append entries  1  args.Term is  1  myterm 1
+id  1  timer reset
+append entries  2  args.Term is  1  myterm 1
+id  2  timer reset
+recv  2  in total
+0  broad cast append entri
+append entries  2  args.Term is  1  myterm 1
+id  2  timer reset
+append entries  1  args.Term is  1  myterm 1
+id  1  timer reset
+recv  2  in total
+0  broad cast append entri
+append entries  1  args.Term is  1  myterm 1
+id  1  timer reset
+append entries  2  args.Term is  1  myterm 1
+id  2  timer reset
+recv  2  in total
+0  broad cast append entri
+append entries  1  args.Term is  1  myterm 1
+id  1  timer reset
+append entries  2  args.Term is  1  myterm 1
+id  2  timer reset
+recv  2  in total
+0  broad cast append entri
+append entries  1  args.Term is  1  myterm 1
+id  1  timer reset
+append entries  2  args.Term is  1  myterm 1
+id  2  timer reset
+recv  2  in total
+0  broad cast append entri
+append entries  2  args.Term is  1  myterm 1
+id  2  timer reset
+append entries  1  args.Term is  1  myterm 1
+id  1  timer reset
+recv  2  in total
+0  broad cast append entri
+append entries  1  args.Term is  1  myterm 1
+append entries  2  args.Term is  1  myterm 1
+id  2  timer reset
+id  1  timer reset
+recv  2  in total
+0  broad cast append entri
+append entries  1  args.Term is  1  myterm 1
+id  1  timer reset
+append entries  2  args.Term is  1  myterm 1
+id  2  timer reset
+recv  2  in total
+0  broad cast append entri
+--- FAIL: TestInitialElection2A (3.09s)
+	testing.go:699: race detected during execution of test
+0  appendentrie  2  error
+0  appendentrie  1  error
+recv  2  in total
+0  initialize term is  0
+1  initialize term is  0
+2  initialize term is  0
+Test (2A): election after network failure ...
+server id  0  expire timer
+server id  0  is now candidate. currentTerm  1
+sent args term  1  me is  0
+sent args term  1  me is  0
+wait for vote finish
+0  asks me 1  to vote
+args term is  1  my term is  0
+vote for clear
+rf.votedFor  -1  args.LastLogindex 0  rf.getLastLogIndex 0
+i voted
+0  asks me 2  to vote
+args term is  1  my term is  0
+vote for clear
+rf.votedFor  -1  args.LastLogindex 0  rf.getLastLogIndex 0
+i voted
+candidate: 0 recv enough votes and becomes leader0 leader initialize
+0  broad cast append entri
+append entries  1  args.Term is  1  myterm 1
+id  1  timer reset
+append entries  2  args.Term is  1  myterm 1
+id  2  timer reset
+recv  2  in total
+0  broad cast append entri
+append entries  2  args.Term is  1  myterm 1
+id  2  timer reset
+append entries  1  args.Term is  1  myterm 1
+id  1  timer reset
+recv  2  in total
+0  broad cast append entri
+0  appendentrie  1  error
+0  appendentrie  2  error
+recv  2  in total
+0  broad cast append entri
+append entries  2  args.Term is  1  myterm 1
+id  2  timer reset
+append entries  1  args.Term is  1  myterm 1
+id  1  timer reset
+recv  2  in total
+0  broad cast append entri
+0  appendentrie  2  error
+0  appendentrie  1  error
+recv  2  in total
+0  broad cast append entri
+append entries  2  args.Term is  1  myterm 1
+id  2  timer reset
+append entries  1  args.Term is  1  myterm 1
+id  1  timer reset
+recv  2  in total
+0  time expire but not in follower State
+0  broad cast append entri
+0  appendentrie  1  error
+0  appendentrie  2  error
+recv  2  in total
+0  broad cast append entri
+append entries  1  args.Term is  1  myterm 1
+id  1  timer reset
+append entries  2  args.Term is  1  myterm 1
+id  2  timer reset
+recv  2  in total
+server id  2  expire timer
+server id  2  is now candidate. currentTerm  2
+sent args term  2  me is  2
+sent args term  2  me is  2
+wait for vote finish
+server id  1  expire timer
+server id  1  is now candidate. currentTerm  2
+sent args term  2  me is  1
+sent args term  2  me is  1
+0  broad cast append entri
+wait for vote finish
+0  appendentrie  1  error
+0  appendentrie  2  error
+recv  2  in total
+0  broad cast append entri
+0  broad cast append entri
+0  appendentrie  1  error
+0  appendentrie  2  error
+recv  2  in total
+0  broad cast append entri
+2  need to quit right now current term is  2
+server id  2  expire timer
+server id  2  is now candidate. currentTerm  3
+sent args term  3  me is  2
+sent args term  3  me is  2
+wait for vote finish
+0  broad cast append entri
+0  appendentrie  2  error
+0  appendentrie  1  error
+recv  2  in total
+0  broad cast append entri
+1  need to quit right now current term is  2
+server id  1  expire timer
+server id  1  is now candidate. currentTerm  3
+sent args term  3  me is  1
+sent args term  3  me is  1
+wait for vote finish
+0  broad cast append entri
+0  appendentrie  2  error
+0  appendentrie  1  error
+recv  2  in total
+0  broad cast append entri
+server id  2  expire timer
+server id  2  is now candidate. currentTerm  2
+sent args term  2  me is  2
+sent args term  2  me is  2
+0  broad cast append entri
+wait for vote finish
+0  appendentrie  1  error
+0  appendentrie  2  error
+recv  2  in total
+2  asks me 1  to vote
+args term is  2  my term is  1
+vote for clear
+rf.votedFor  -1  args.LastLogindex 0  rf.getLastLogIndex 0
+i voted
+candidate: 2 recv enough votes and becomes leader2 leader initialize
+2  broad cast append entri
+2  need to quit right now current term is  3
+server id  2  expire timer
+server id  2  is now candidate. currentTerm  4
+sent args term  4  me is  2
+sent args term  4  me is  2
+wait for vote finish
+append entries  1  args.Term is  2  myterm 2
+id  1  timer reset
+0  broad cast append entri
+0  broad cast append entri
+0  appendentrie  2  error
+0  appendentrie  1  error
+recv  2  in total
+0  broad cast append entri
+0  broad cast append entri
+0  appendentrie  1  error
+0  appendentrie  2  error
+recv  2  in total
+1  need to quit right now current term is  3
+server id  1  expire timer
+server id  1  is now candidate. currentTerm  4
+sent args term  4  me is  1
+sent args term  4  me is  1
+wait for vote finish
+0  broad cast append entri
+0  broad cast append entri
+0  appendentrie  2  error
+0  appendentrie  1  error
+recv  2  in total
+0  broad cast append entri
+append entries  1  args.Term is  1  myterm 2
+Leader  0  become follower 
+1  need to quit right now current term is  4
+server id  1  expire timer
+server id  1  is now candidate. currentTerm  5
+sent args term  5  me is  1
+sent args term  5  me is  1
+wait for vote finish
+2  need to quit right now current term is  4
+server id  2  expire timer
+server id  2  is now candidate. currentTerm  5
+sent args term  5  me is  2
+sent args term  5  me is  2
+wait for vote finish
+0  broad cast append entri
+0  appendentrie  2  error
+0  appendentrie  1  error
+recv  2  in total
+server id  1  expire timer
+server id  1  is now candidate. currentTerm  3
+sent args term  3  me is  1
+sent args term  3  me is  1
+wait for vote finish
+1  asks me 0  to vote
+args term is  3  my term is  2
+vote for clear
+rf.votedFor  -1  args.LastLogindex 0  rf.getLastLogIndex 0
+i voted
+candidate: 1 recv enough votes and becomes leader1 leader initialize
+1  broad cast append entri
+append entries  0  args.Term is  3  myterm 3
+id  0  timer reset
+0  broad cast append entri
+0  appendentrie  1  error
+0  appendentrie  2  error
+recv  2  in total
+0  appendentrie  2  error
+recv  2  in total
+0  broad cast append entri
+0  appendentrie  2  error
+0  appendentrie  1  error
+recv  2  in total
+1  appendentrie  2  error
+recv  2  in total
+1  broad cast append entri
+1  need to quit right now current term is  5
+server id  1  expire timer
+server id  1  is now candidate. currentTerm  6
+sent args term  6  me is  1
+sent args term  6  me is  1
+wait for vote finish
+0  broad cast append entri
+0  appendentrie  2  error
+0  appendentrie  1  error
+recv  2  in total
+2  need to quit right now current term is  5
+server id  2  expire timer
+server id  2  is now candidate. currentTerm  6
+sent args term  6  me is  2
+sent args term  6  me is  2
+wait for vote finish
+0  broad cast append entri
+0  appendentrie  2  error
+0  appendentrie  1  error
+recv  2  in total
+0  broad cast append entri
+0  appendentrie  2  error
+0  appendentrie  1  error
+recv  2  in total
+2  need to quit right now current term is  6
+server id  2  expire timer
+server id  2  is now candidate. currentTerm  7
+sent args term  7  me is  2
+sent args term  7  me is  2
+wait for vote finish
+0  appendentrie  2  error
+1  need to quit right now current term is  6
+server id  1  expire timer
+server id  1  is now candidate. currentTerm  7
+sent args term  7  me is  1
+sent args term  7  me is  1
+wait for vote finish
+server id  0  expire timer
+server id  0  is now candidate. currentTerm  4
+sent args term  4  me is  0
+sent args term  4  me is  0
+wait for vote finish
+0  broad cast append entri
+0  appendentrie  1  error
+0  appendentrie  2  error
+recv  2  in total
+0  appendentrie  1  error
+0  appendentrie  2  error
+0  broad cast append entri
+0  appendentrie  2  error
+0  appendentrie  1  error
+recv  2  in total
+0  need to quit right now current term is  4
+server id  0  expire timer
+server id  0  is now candidate. currentTerm  5
+sent args term  5  me is  0
+sent args term  5  me is  0
+wait for vote finish
+0  broad cast append entri
+0  appendentrie  1  error
+0  appendentrie  2  error
+recv  2  in total
+2  need to quit right now current term is  7
+server id  2  expire timer
+server id  2  is now candidate. currentTerm  8
+sent args term  8  me is  2
+sent args term  8  me is  2
+wait for vote finish
+0  broad cast append entri
+0  appendentrie  1  error
+0  appendentrie  2  error
+recv  2  in total
+1  need to quit right now current term is  7
+server id  1  expire timer
+server id  1  is now candidate. currentTerm  8
+sent args term  8  me is  1
+sent args term  8  me is  1
+wait for vote finish
+2  need to quit right now current term is  8
+server id  2  expire timer
+server id  2  is now candidate. currentTerm  9
+sent args term  9  me is  2
+sent args term  9  me is  2
+wait for vote finish
+0  broad cast append entri
+0  appendentrie  1  error
+0  appendentrie  2  error
+recv  2  in total
+0  appendentrie  2  error
+0  broad cast append entri
+0  appendentrie  1  error
+0  appendentrie  2  error
+recv  2  in total
+0  broad cast append entri
+0  appendentrie  1  error
+0  appendentrie  2  error
+recv  2  in total
+0  need to quit right now current term is  5
+server id  0  expire timer
+server id  0  is now candidate. currentTerm  6
+sent args term  6  me is  0
+sent args term  6  me is  0
+wait for vote finish
+0  broad cast append entri
+0  appendentrie  1  error
+0  appendentrie  2  error
+recv  2  in total
+1  need to quit right now current term is  8
+server id  1  expire timer
+server id  1  is now candidate. currentTerm  9
+sent args term  9  me is  1
+sent args term  9  me is  1
+wait for vote finish
+0  broad cast append entri
+0  appendentrie  1  error
+0  appendentrie  2  error
+recv  2  in total
+2  need to quit right now current term is  9
+server id  2  expire timer
+server id  2  is now candidate. currentTerm  10
+sent args term  10  me is  2
+sent args term  10  me is  2
+wait for vote finish
+0  appendentrie  2  error
+0  appendentrie  1  error
+0  broad cast append entri
+0  appendentrie  2  error
+0  appendentrie  1  error
+recv  2  in total
+0  need to quit right now current term is  6
+server id  0  expire timer
+server id  0  is now candidate. currentTerm  7
+sent args term  7  me is  0
+sent args term  7  me is  0
+wait for vote finish
+1  need to quit right now current term is  9
+server id  1  expire timer
+server id  1  is now candidate. currentTerm  10
+sent args term  10  me is  1
+sent args term  10  me is  1
+wait for vote finish
+0  broad cast append entri
+0  appendentrie  1  error
+0  appendentrie  2  error
+recv  2  in total
+0  appendentrie  2  error
+recv  2  in total
+0  broad cast append entri
+0  appendentrie  1  error
+0  appendentrie  2  error
+recv  2  in total
+0  need to quit right now current term is  7
+server id  0  expire timer
+server id  0  is now candidate. currentTerm  8
+sent args term  8  me is  0
+sent args term  8  me is  0
+wait for vote finish
+0  broad cast append entri
+0  appendentrie  2  error
+0  appendentrie  1  error
+recv  2  in total
+1  need to quit right now current term is  10
+server id  1  expire timer
+server id  1  is now candidate. currentTerm  11
+sent args term  11  me is  1
+sent args term  11  me is  1
+wait for vote finish
+0  need to quit right now current term is  8
+server id  0  expire timer
+server id  0  is now candidate. currentTerm  9
+sent args term  9  me is  0
+sent args term  9  me is  0
+wait for vote finish
+2  need to quit right now current term is  10
+server id  2  expire timer
+server id  2  is now candidate. currentTerm  11
+sent args term  11  me is  2
+sent args term  11  me is  2
+wait for vote finish
+0  broad cast append entri
+0  appendentrie  1  error
+0  appendentrie  2  error
+recv  2  in total
+0  broad cast append entri
+0  appendentrie  2  error
+0  appendentrie  1  error
+recv  2  in total
+2  need to quit right now current term is  11
+server id  2  expire timer
+server id  2  is now candidate. currentTerm  12
+sent args term  12  me is  2
+sent args term  12  me is  2
+wait for vote finish
+0  broad cast append entri
+0  appendentrie  1  error
+0  appendentrie  2  error
+recv  2  in total
+0  broad cast append entri
+0  appendentrie  1  error
+0  appendentrie  2  error
+recv  2  in total
+--- FAIL: TestReElection2A (5.11s)
+	testing.go:699: race detected during execution of test
+FAIL
+exit status 1
+FAIL	raft	8.436s
